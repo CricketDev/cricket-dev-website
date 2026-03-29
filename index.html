@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="CricketDev builds thoughtful mobile experiences. Meet Elevia, a calm quote companion coming soon to Google Play."
+    >
+    <title>CricketDev | Elevia</title>
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <link rel="icon" type="image/png" href="assets/elevia_icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="site-backdrop" aria-hidden="true">
+      <div class="orb orb-a"></div>
+      <div class="orb orb-b"></div>
+      <div class="grid-glow"></div>
+    </div>
+
+    <div class="page-shell">
+      <header class="topbar reveal">
+        <a class="brandmark" href="./" aria-label="CricketDev home">
+          <img src="assets/cricket_dev.png" alt="CricketDev logo">
+          <span>
+            <strong>CricketDev</strong>
+            <small>Mobile apps with warmth and clarity</small>
+          </span>
+        </a>
+
+        <nav class="topnav" aria-label="Primary">
+          <a href="#company">Company</a>
+          <a href="#app">Elevia</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Independent mobile studio</p>
+            <h1>Built quietly, designed to lift people up.</h1>
+            <p class="hero-text">
+              CricketDev is a small studio creating thoughtful digital products
+              that feel calm, useful, and human. Our first app, Elevia, brings
+              uplifting quotes into a simple ritual you can return to whenever
+              you need a reset.
+            </p>
+
+            <div class="cta-row">
+              <button
+                type="button"
+                class="badge-button"
+                data-coming-soon
+                aria-label="Open Google Play coming soon message"
+              >
+                <img
+                  src="assets/google-play-badge.svg"
+                  alt="Get it on Google Play"
+                >
+              </button>
+
+              <a class="text-button" href="#app">See what Elevia does</a>
+            </div>
+
+            <div class="status-pill">
+              <span class="status-dot"></span>
+              Google Play release in preparation
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <article class="glass-card studio-card">
+              <div class="mini-label">CricketDev</div>
+              <div class="logo-stack">
+                <img src="assets/cricket_dev.png" alt="CricketDev mascot logo">
+                <div>
+                  <h2>Small team, deliberate craft.</h2>
+                  <p>
+                    We care about a clean experience, clear writing, and
+                    products that stay out of the user&apos;s way.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="feature-panel">
+              <div class="feature-copy">
+                <p class="mini-label">Launching first</p>
+                <h2>Elevia</h2>
+                <p>
+                  A feel-good quote app with swipe discovery, local saves, and
+                  gentle daily reminders.
+                </p>
+              </div>
+              <img src="assets/elevia_icon.png" alt="Elevia app icon">
+            </article>
+
+            <article class="quote-preview">
+              <p class="mini-label">Inside the app</p>
+              <blockquote>
+                “A little inspiration, saved at the right moment, can change the
+                shape of a day.”
+              </blockquote>
+              <span>Thoughtful, local-first, and easy to revisit.</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="section reveal" id="company">
+          <div class="section-heading">
+            <p class="eyebrow">About CricketDev</p>
+            <h2>Building products that feel light, not loud.</h2>
+            <p>
+              CricketDev is a small independent software company focused on
+              mobile experiences with personality and restraint. We aim for
+              clear interfaces, good pacing, and privacy-minded defaults.
+            </p>
+          </div>
+
+          <div class="info-grid">
+            <article class="info-card">
+              <span>01</span>
+              <h3>Human-first design</h3>
+              <p>
+                Interfaces should reduce friction and help users feel calm,
+                capable, and in control.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <span>02</span>
+              <h3>Lean by default</h3>
+              <p>
+                We start simple, polish the essentials, and only add complexity
+                when it truly improves the product.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <span>03</span>
+              <h3>Privacy-aware choices</h3>
+              <p>
+                Elevia avoids accounts, ads, and analytics-heavy patterns so it
+                can stay focused on the experience itself.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section app-section reveal" id="app">
+          <div class="section-heading">
+            <p class="eyebrow">First app</p>
+            <h2>Elevia turns inspiration into a small daily habit.</h2>
+            <p>
+              Open the app for a Quote of the Day, swipe through a calm stream
+              of uplifting quotes, save the ones that resonate, and return to
+              them later with search, sorting, and custom categories.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3>Quote of the Day</h3>
+              <p>
+                Start with a single featured quote, then pull to refresh when
+                you want a new moment of clarity.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <h3>Swipe to save or skip</h3>
+              <p>
+                Move through the quote deck naturally: right to keep, left to
+                move on, with a gentle pace built into the flow.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <h3>Saved quotes that stay organized</h3>
+              <p>
+                Search by author or content, sort your library, and use custom
+                categories to build your own quote collection.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <h3>Local reminders and preferences</h3>
+              <p>
+                Optional daily notifications, theme choices, and color
+                customisation all stay on-device for a lightweight experience.
+              </p>
+            </article>
+          </div>
+
+          <div class="showcase-panel">
+            <div class="showcase-copy">
+              <p class="mini-label">What makes it feel different</p>
+              <h3>Simple by intent.</h3>
+              <p>
+                Elevia is designed to feel welcoming instead of noisy. It uses a
+                clean three-tab structure, caches quote content for smoother
+                repeat visits, and lets people save what matters without signing
+                up for anything.
+              </p>
+              <button type="button" class="primary-button" data-coming-soon>
+                Notify me when it lands on Google Play
+              </button>
+            </div>
+
+            <div class="app-mock">
+              <div class="mock-topbar">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="mock-content">
+                <p class="mini-label">Quote of the day</p>
+                <blockquote>
+                  “Use the words that steady you, then carry them forward.”
+                </blockquote>
+                <strong>Swipe. Save. Return later.</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact-banner reveal" id="contact">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Want to talk to CricketDev?</h2>
+            <p>
+              For launch questions, support requests, or future collaboration,
+              reach us at
+              <a href="mailto:cricketdevhq@gmail.com">cricketdevhq@gmail.com</a>.
+            </p>
+          </div>
+          <a class="mail-link" href="mailto:cricketdevhq@gmail.com">
+            cricketdevhq@gmail.com
+          </a>
+        </section>
+      </main>
+
+      <footer class="footer reveal">
+        <p>CricketDev</p>
+        <p>Elevia is coming soon to Google Play.</p>
+      </footer>
+    </div>
+
+    <div class="modal-backdrop" id="coming-soon-modal" hidden>
+      <div
+        class="modal-card"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="coming-soon-title"
+      >
+        <button
+          type="button"
+          class="modal-close"
+          id="close-modal"
+          aria-label="Close coming soon dialog"
+        >
+          Close
+        </button>
+        <p class="eyebrow">Google Play</p>
+        <h2 id="coming-soon-title">Coming soon!</h2>
+        <p>
+          Elevia is not live on Google Play yet. This button will point to the
+          store listing once the release is published.
+        </p>
+        <p>
+          If you want to reach the team before launch, email
+          <a href="mailto:cricketdevhq@gmail.com">cricketdevhq@gmail.com</a>.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
