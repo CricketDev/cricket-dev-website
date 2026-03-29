@@ -67,17 +67,19 @@ button {
 .skip-link {
   position: absolute;
   left: 1rem;
-  top: -3rem;
+  top: 1rem;
   z-index: 20;
   padding: 0.8rem 1rem;
   border-radius: 999px;
   background: var(--brand-deep);
   color: #fffaf0;
   text-decoration: none;
+  transform: translateY(calc(-100% - 1rem));
+  transition: transform 180ms ease;
 }
 
 .skip-link:focus {
-  top: 1rem;
+  transform: translateY(0);
 }
 
 .site-backdrop {
@@ -237,7 +239,7 @@ button:focus-visible {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
   gap: clamp(1.5rem, 4vw, 3rem);
-  align-items: center;
+  align-items: start;
   padding: var(--section-space) 0 2.5rem;
 }
 
@@ -259,8 +261,8 @@ button:focus-visible {
 }
 
 .hero-copy h1 {
-  font-size: clamp(3rem, 6.6vw, 5.8rem);
-  max-width: 9ch;
+  font-size: clamp(3rem, 5.4vw, 5rem);
+  max-width: 10.5ch;
 }
 
 .section-heading h2,
@@ -754,6 +756,7 @@ body.modal-open {
   }
 
   .topbar {
+    flex-wrap: wrap;
     align-items: flex-start;
   }
 
@@ -802,6 +805,7 @@ body.modal-open {
   .topnav a {
     width: 100%;
     padding: 0.75rem 0.6rem;
+    font-size: 0.92rem;
   }
 
   .hero {
@@ -810,8 +814,8 @@ body.modal-open {
   }
 
   .hero-copy h1 {
-    font-size: clamp(2.8rem, 13vw, 4.2rem);
-    max-width: 10ch;
+    font-size: clamp(2.7rem, 13vw, 4rem);
+    max-width: 9ch;
   }
 
   .hero-panel-brand,
@@ -854,6 +858,24 @@ body.modal-open {
 
   .footer {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 520px) {
+  .topbar {
+    gap: 0.8rem;
+  }
+
+  .nav-list {
+    grid-template-columns: 1fr;
+  }
+
+  .brandmark strong {
+    font-size: 0.94rem;
+  }
+
+  .brandmark small {
+    font-size: 0.8rem;
   }
 }
 
