@@ -48,9 +48,14 @@ Then open:
    ```
 
 5. On GitHub, go to `Settings > Pages`.
-6. Under `Build and deployment`, choose `GitHub Actions` as the source.
-7. Wait for the `Deploy CricketDev Website` workflow to finish.
-8. Your live URLs will be:
+6. Under `Build and deployment`, choose `GitHub Actions` as the source, then save if GitHub asks you to confirm it.
+7. Make sure the repository is eligible for GitHub Pages:
+
+   - public repositories work on GitHub Free
+   - private repositories need a plan that supports private GitHub Pages
+
+8. Wait for the `Deploy CricketDev Website` workflow to finish, or re-run it after enabling Pages.
+9. Your live URLs will be:
 
    - `https://YOUR-USERNAME.github.io/cricket-dev-website/`
    - `https://YOUR-USERNAME.github.io/cricket-dev-website/elevia-privacy-policy/`
@@ -60,3 +65,4 @@ Then open:
 - The Google Play buttons intentionally open a "Coming soon!" modal until the app listing exists.
 - The privacy policy route is implemented as a real folder path and is not linked from the homepage.
 - All asset references are relative so the site works on a GitHub Pages project URL.
+- If the workflow fails on `actions/configure-pages` with a "Get Pages site failed" or `Not Found` message, GitHub Pages is not fully enabled for the repository yet, or the repository plan/visibility does not support Pages.
