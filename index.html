@@ -34,7 +34,22 @@
           </span>
         </a>
 
-        <nav class="topnav" aria-label="Primary">
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle-label">Menu</span>
+          <span class="nav-toggle-bars" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+
+        <nav class="topnav" id="primary-navigation" aria-label="Primary">
           <ul class="nav-list">
             <li><a href="#company">Company</a></li>
             <li><a href="#elevia">Elevia</a></li>
