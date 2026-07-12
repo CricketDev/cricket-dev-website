@@ -34,6 +34,7 @@ jobs:
           mkdir _site
           cp -R assets _site/assets
           cp -R elevia-privacy-policy _site/elevia-privacy-policy
+          cp -R qr-scanner-privacy-policy _site/qr-scanner-privacy-policy
           cp app-ads.txt index.html styles.css script.js .nojekyll _site/
 
       - name: Upload Pages artifact
